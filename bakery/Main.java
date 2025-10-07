@@ -8,6 +8,7 @@ public class Main {
         order.addCake(new VanillaCake());
         order.addCake(new ChocolateCake());
         order.addCake(new MultiLayeredCake( new ChocolateCake()));
+        order.addCake(new MultiLayeredCake( new SprinklesCake(new VanillaCake())));
 
         // Print the order
         order.printOrder();
