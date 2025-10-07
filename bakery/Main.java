@@ -10,6 +10,7 @@ public class Main {
         order.addCake(new MultiLayeredCake( new ChocolateCake()));
         order.addCake(new MultiLayeredCake( new SprinklesCake(new VanillaCake())));
         order.addCake(new WithSayingCake(new VanillaCake(), "one of") );
+        order.addCake(new StrawberryCake());
 
         // Print the order
         order.printOrder();
