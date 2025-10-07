@@ -13,7 +13,7 @@ public class Order {
 
     public void printOrder() {
         for (Cake cake : cakes) {
-            System.out.printf("   %2d  %s\n", cake.getCost(), cake.getDescription());
+            System.out.printf("   %.2f  %s\n", cake.getCost(), cake.getDescription());
         }
     }
 }
